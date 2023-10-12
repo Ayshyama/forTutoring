@@ -49,6 +49,9 @@ git fetch upstream
 ```
 5. Checkout Branch: Make sure you are on the branch into which you want to merge the updates (commonly main).
 ```
+git branch
+```
+```
 git checkout main
 ```
 6. Merge Changes: Merge the changes from the upstream repository's main branch into your local main branch.
@@ -61,6 +64,15 @@ git merge upstream/main
 git push origin main
 ```
 
+### If you have set wrong remote origin or upstream follow these steps:
+- to change remote origin
+```
+git remote set-url origin https://github.com/username/repository.git
+```
+- to change remote upstream
+```
+git remote set-url upstream https://github.com/username/repository.git
+```
 
 
 
