@@ -1,0 +1,60 @@
+.header {
+    background-color: burlywood;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;  /* Centers child elements vertically */
+    justify-content: center;  /* Centers child elements horizontally */
+}
+
+.navbar{
+    width: calc(100% - 200px);
+    margin: 0 auto;
+
+}
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-container {
+    width: 200px;
+
+}
+.logo-container img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.menu-container .menu-right {
+    width: 200px;
+    justify-content: flex-end;
+}
+
+.menu-left, .menu-right {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
