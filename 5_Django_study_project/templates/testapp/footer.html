@@ -1,0 +1,16 @@
+{% load static %}
+{% load my_tags %}
+
+
+{#<script src="{% static 'js/fetch_time.js' %}"></script>#}
+
+
+<footer>
+    <br>
+    Copyright &copy; {{ company_name }};
+    <br><br>
+    <div id="time-container">
+        {% current_time %}
+    </div>
+</footer>
+

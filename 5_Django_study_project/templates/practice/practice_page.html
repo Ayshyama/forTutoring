@@ -1,0 +1,49 @@
+{% extends 'testapp/base.html' %}
+{% load my_tags %}
+
+{% block content %}
+    <h1 class="centered-title">Practice Page</h1>
+
+    <div class="practice_container" style="text-align: center; align-items: center; margin-top: 20px">
+        {% for n in list_of_numbers %}
+            {% if n|divisibleby:"2" %}
+                <span style="color: blue">{{ n }}</span>
+            {% else %}
+                <span style="color: red">{{ n }}</span>
+            {% endif %}
+        {% endfor %}
+        <br><br>
+        {{ greeting|upper }}
+        <br>
+        {{ greeting|reverse|upper }}
+
+        <br><br>
+        {{ user_info.first_name }} - {{ user_info.last_name }}
+        <br>
+        {% if is_vip %}
+            <h4 style="color: green">VIP</h4>
+        {% else %}
+            <h4 style="color: red">Not VIP</h4>
+        {% endif %}
+        <br>
+        {{ notes|escape }}
+        <br>
+        {{ notes|safe }}
+        <br>
+        <br>
+
+        {% load tz %}
+        {% timezone "Europe/Paris" %}
+            {% now "m-d-Y; P" as date %}
+        {% endtimezone %}
+        {{ date }}
+
+        <br>
+        {{ current_date|date:"m-d-Y; P" }}
+
+    </div>
+
+{% endblock content%}
+
+{% block paragraph %}
+{% endblock paragraph%}
