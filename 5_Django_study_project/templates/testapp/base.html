@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+{% load my_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}<title>Base</title>{% endblock title %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="page-container">
+  <div class="content-wrap">
+        {% block header %}
+            <div class="header">
+                <div class="navbar">
+                    <h1>Header</h1>
+                    <ul>
+                        <li>
+                            <a href="{% url 'home' %}">Home</a>
+                            <ul>
+                                <li><a href="{% url 'home2' %}">Home 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'about' %}">About</a>
+                            <ul>
+                                <li><a href="{% url 'about2' %}">About 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'practice' %}">Practice</a></li>
+
+                        {% if user.is_authenticated %}
+                            <li>Welcome, <span style="color: mediumvioletred">{{ user.username }}</span></li>
+                            <li><a href="{% url 'logout' %}">logout</a></li>
+                        {% else %}
+                            <li><a href="{% url 'login' %}">login</a></li>
+                            <li><a href="{% url 'register' %}">Register</a></li>
+                        {% endif %}
+
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        {% endblock header%}
+
+        {% block content %}
+            <h1>Test</h1>
+        {% endblock content%}
+
+
+
+        {% block paragraph %}
+            <h2>This is the BASE paragraph block</h2>
+            {% block inner_paragraph %}
+                This is the BASE paragraph inner block
+            {% endblock inner_paragraph %}
+            <br>Continue BASE paragraph block
+        {% endblock paragraph %}
+
+
+
+  </div>
+
+
+
+{% block footer %}
+    {% render_footer 'AwesomeCo' %}
+{% endblock footer%}
+
+
+
+</div>
+
+</body>
+
+</html>
