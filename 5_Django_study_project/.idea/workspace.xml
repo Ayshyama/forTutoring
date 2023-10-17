@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b745131e-aa3c-471f-90da-7a703f40820d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/spline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e727a390-31a0-478a-a06f-f081e8eed629.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e727a390-31a0-478a-a06f-f081e8eed629.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc_temp_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc_temp_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/spline.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/spline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/templatetags/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/templatetags/my_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Igor",
-    "last_opened_file_path": "C:/Users/user/Desktop/Projects/9_forTutoring/forTutoring/5_Django_study_project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Igor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Projects/1_myStudy/selfedu_OOP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="5_Django_study_project" type="Python.DjangoServer" factoryName="Django server">
       <module name="5_Django_study_project" />
@@ -90,7 +98,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697212077275</updated>
-      <workItem from="1697212078455" duration="9964000" />
+      <workItem from="1697212078455" duration="11990000" />
+      <workItem from="1697273164339" duration="712000" />
+      <workItem from="1697396459357" duration="48000" />
+      <workItem from="1697525324112" duration="8678000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
 {% extends 'testapp/base.html' %}
+{% load static %}
 
 {% load my_tags %}
 {% block title %}<title>Home</title>{% endblock title %}
@@ -8,9 +9,40 @@
 {% endblock content %}
 
 
+{% block hero %}
+    <main class="main">
+
+        <section class="hero">
+            <div class="hero__shape-small"></div>
+            <div class="hero__shape-big-1"></div>
+            <div class="hero__shape-big-2"></div>
+            <img src="{% static 'img/shape-bg.png' %}" alt="" class="hero__shape-bg">
+            <canvas id="canvas3d"></canvas>
 
 
-{#{% block inner_paragraph %}This is the HOME inner paragraph block{% endblock %}#}
+            <div class="hero__container container">
+
+
+
+{% block posts %}
+    {% for post in posts %}
+        <div style="margin-top: 100px;">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.body }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+            </div>
+
+        </section>
+    </main>
+{% endblock %}
+
+
+
 
 
 

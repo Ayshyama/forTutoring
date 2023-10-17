@@ -1,14 +1,15 @@
 .header {
-    background-color: burlywood;
     height: 160px;
     width: 100%;
     display: flex;
     align-items: center;  /* Centers child elements vertically */
     justify-content: center;  /* Centers child elements horizontally */
+    z-index: 10;
 }
 
 .navbar{
     width: calc(100% - 200px);
+    max-width: 1400px;
     margin: 0 auto;
 
 }
@@ -21,6 +22,7 @@
 
 .logo-container {
     width: 200px;
+    z-index: 10;
 
 }
 .logo-container img{
