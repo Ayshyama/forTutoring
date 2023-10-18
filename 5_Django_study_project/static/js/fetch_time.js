@@ -1,6 +1,6 @@
 
 function fetchTime() {
-fetch('/server_time/')  // Replace with the actual path
+fetch('/server_time/')
   .then(response => response.text())
   .then(html => {
     document.getElementById('time-container').innerHTML = html;
@@ -8,6 +8,6 @@ fetch('/server_time/')  // Replace with the actual path
   .catch(error => console.error('Error fetching time:', error));
 }
 
-// Fetch time every second
+
 setInterval(fetchTime, 1000);
 

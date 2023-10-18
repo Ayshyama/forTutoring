@@ -21,7 +21,9 @@
 
 .logo-container {
     width: 250px;
+    position: relative;
 }
+
 .logo-container img{
     max-width: 100px;
     max-height: 100px;
@@ -41,7 +43,7 @@
 
 .navbar li a {
     text-decoration: none;
-    color: #101010;
+    color: #030303;
     font-size: 16px;
 }
 

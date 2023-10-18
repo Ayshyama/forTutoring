@@ -5,31 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="523e2357-2682-4801-bee3-134af25d78cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/posts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/posts/post_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e727a390-31a0-478a-a06f-f081e8eed629.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/templatetags/my_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exc_temp_project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/templatetags/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exc_temp_project/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exc_temp_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exc_temp_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exc_temp_project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/migrations/0002_post_author.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/about2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/home2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/fetch_time.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/fetch_time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/practice/practice_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/practice/practice_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/server_time.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/server_time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,9 +211,10 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="exc_temp_project.settings" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Django_study_project.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\user\Desktop\Projects\9_FOR_TUTORING\forTutoring\5_Django_study_project\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (5_Django_study_project) (2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -197,6 +230,14 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django Server.5_Django_study_project" />
+      <item itemvalue="Django tests.Test: posts.tests" />
+      <item itemvalue="Django tests.Test: posts.tests.PostTest" />
+      <item itemvalue="Django tests.Test: posts.tests.PostTest.test_post_content" />
+      <item itemvalue="Django tests.Test: posts.tests.PostTest.test_template_name_is_correct" />
+      <item itemvalue="Django tests.Test: posts.tests.PostTest.test_url_available_by_name" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Django tests.Test: posts.tests.PostTest" />
@@ -215,7 +256,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697616376762</updated>
-      <workItem from="1697616377891" duration="13922000" />
+      <workItem from="1697616377891" duration="17005000" />
     </task>
     <servers />
   </component>
