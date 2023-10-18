@@ -23,8 +23,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('core.urls')),  # new
     path('', include('practice.urls')),  # new
-    path('', include('users.urls'))  # new
-
+    path('', include('users.urls')),  # new
+    path('', include('posts.urls')),  # new
 ]
 
 if settings.DEBUG:

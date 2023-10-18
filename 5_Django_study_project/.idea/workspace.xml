@@ -4,67 +4,175 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b745131e-aa3c-471f-90da-7a703f40820d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e727a390-31a0-478a-a06f-f081e8eed629.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e727a390-31a0-478a-a06f-f081e8eed629.xml" afterDir="false" />
+    <list default="true" id="523e2357-2682-4801-bee3-134af25d78cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/posts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/posts/post_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e727a390-31a0-478a-a06f-f081e8eed629.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc_temp_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/spline.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/spline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/about2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/templatetags/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/templatetags/my_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/home2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2WiOkYMhcIULdWNlQD7dwGzjtS8" />
+  <component name="ProjectId" id="2WvcDjTaJbxlBq2YiPTjxL3DrqB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Igor&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Projects/1_myStudy/selfedu_OOP&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Igor",
+    "last_opened_file_path": "C:/Users/user/Desktop/Projects/9_FOR_TUTORING/forTutoring/5_Django_study_project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Django Server.5_Django_study_project">
+    <configuration name="Test: posts.tests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="5_Django_study_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="posts.tests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: posts.tests.PostTest" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="5_Django_study_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="posts.tests.PostTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: posts.tests.PostTest.test_post_content" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="5_Django_study_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="posts.tests.PostTest.test_post_content" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: posts.tests.PostTest.test_template_name_is_correct" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="5_Django_study_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="posts.tests.PostTest.test_template_name_is_correct" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: posts.tests.PostTest.test_url_available_by_name" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="5_Django_study_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="posts.tests.PostTest.test_url_available_by_name" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="5_Django_study_project" type="Python.DjangoServer" factoryName="Django server">
       <module name="5_Django_study_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,23 +197,37 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: posts.tests.PostTest" />
+        <item itemvalue="Django tests.Test: posts.tests.PostTest.test_template_name_is_correct" />
+        <item itemvalue="Django tests.Test: posts.tests.PostTest.test_url_available_by_name" />
+        <item itemvalue="Django tests.Test: posts.tests.PostTest.test_post_content" />
+        <item itemvalue="Django tests.Test: posts.tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b745131e-aa3c-471f-90da-7a703f40820d" name="Changes" comment="" />
-      <created>1697212077275</created>
+      <changelist id="523e2357-2682-4801-bee3-134af25d78cf" name="Changes" comment="" />
+      <created>1697616376762</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697212077275</updated>
-      <workItem from="1697212078455" duration="11990000" />
-      <workItem from="1697273164339" duration="712000" />
-      <workItem from="1697396459357" duration="48000" />
-      <workItem from="1697525324112" duration="8678000" />
+      <updated>1697616376762</updated>
+      <workItem from="1697616377891" duration="13922000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/5_Django_study_project$Test__posts_tests.coverage" NAME="Test: posts.tests Coverage Results" MODIFIED="1697617620866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/5_Django_study_project$Test__posts_tests_PostTest_test_template_name_is_correct.coverage" NAME="Test: posts.tests.PostTest.test_template_name_is_correct Coverage Results" MODIFIED="1697619640734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/5_Django_study_project$Test__posts_tests_PostTest_setUpTestData.coverage" NAME="Test: posts.tests.PostTest.setUpTestData Coverage Results" MODIFIED="1697617565781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/5_Django_study_project$Test__posts_tests_PostTest_test_url_available_by_name.coverage" NAME="Test: posts.tests.PostTest.test_url_available_by_name Coverage Results" MODIFIED="1697619636166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/5_Django_study_project$Test__posts_tests_PostTest_test_post_content.coverage" NAME="Test: posts.tests.PostTest.test_post_content Coverage Results" MODIFIED="1697617646489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/5_Django_study_project$Test__posts_tests_PostTest.coverage" NAME="Test: posts.tests.PostTest Coverage Results" MODIFIED="1697619650894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

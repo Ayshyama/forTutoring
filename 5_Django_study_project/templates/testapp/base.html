@@ -1,115 +1,85 @@
 <!DOCTYPE html>
+
 {% load static %}
 {% load my_tags %}
 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     {% block title %}<title>Base</title>{% endblock title %}
+    <meta charset="UTF-8">
+    <!------IMPORT LINKS------>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 
-<div class="page-container">
-
-        {% block header %}
-            <div class="header">
-                <div class="navbar">
+{% block header %}
+<header class="header" id="header">
+    <div class="navbar">
 
 
-                    <div class="menu-container">
-                        <div class="logo-container">
-{#                            <a href="{% url 'home' %}"><img src="{% static "img/logo.png" %}" alt="logo"></a>#}
-                            <a href="{% url 'home' %}"><canvas id="canvas3d"></canvas></a>
+        <div class="menu-container">
 
-                        </div>
-                        <ul class="menu-left">
-                            <li><a href="{% url 'home' %}">Home</a></li>
-                            <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'practice' %}">Practice</a></li>
-                            {% if user.is_superuser %}
-                                <li><a href="{% url 'admin:index' %}">Admin</a></li>
-                            {% endif %}
-                        </ul>
-
-                        <ul class="menu-right">
-
-                            {% if user.is_authenticated %}
-                                <li>
-                                    <div class="user-info">
-                                        {% if user.avatar %}
-                                            <img src="{{ user.avatar.url }}" alt="User Avatar" class="user-avatar">
-                                        {% endif %}
-                                        Welcome,&nbsp; <span style="color: mediumvioletred">{{ user.username }}</span>
-                                    </div>
-                                </li>
-                                <li><a href="{% url 'logout' %}">Logout</a></li>
-                            {% else %}
-                                <li><a href="{% url 'login' %}">Login</a></li>
-                                <li><a href="{% url 'register' %}">Register</a></li>
-                            {% endif %}
-                        </ul>
-
-                    </div>
-                </div>
+            <div class="logo-container">
+                <a href="{% url 'home' %}"><canvas id="canvas3d"></canvas></a>
             </div>
-        {% endblock header %}
 
+            <ul class="menu-left">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'practice' %}">Practice</a></li>
+                {% if user.is_superuser %}
+                    <li><a href="{% url 'admin:index' %}">Admin</a></li>
+                {% endif %}
+            </ul>
 
-  <div class="content-wrap">
-        {% block content %}
-            <h1>Test</h1>
-        {% endblock content%}
+            <ul class="menu-right">
+                {% if user.is_authenticated %}
+                    <li>
+                        <div class="user-info">
+                            {% if user.avatar %}
+                                <img src="{{ user.avatar.url }}" alt="User Avatar" class="user-avatar">
+                            {% endif %}
+                            Welcome,&nbsp; <span style="color: mediumvioletred">{{ user.username }}</span>
+                        </div>
+                    </li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</header>
+{% endblock header %}
+
 
 {% block hero %}
-{% endblock %}
-
-{% block paragraph %}
-        This is the BASE paragraph block
-    {% block inner_paragraph %}
-        <br>
-        This is the BASE paragraph INNER block
-    {% endblock inner_paragraph %}
-    <br>Continue BASE paragraph block
-{% endblock paragraph %}
-
-{% block posts %}
-{% endblock %}
-
-{#{% block canvas %}#}
-{#<canvas id="canvas3d"></canvas>#}
-{#{% endblock canvas %}#}
-
-
-  </div>
-
-
-
-
-    <!-- Import maps polyfill -->
-    <!-- Remove this when import maps will be widely supported -->
-    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.483/build/runtime.js"
-        }
-      }
-    </script>
-<script type="module" src="{% static 'js/spline.js' %}"></script>
-
+{% endblock hero %}
 
 
 {% block footer %}
-    {% render_footer 'AwesomeCo' %}
+{% render_footer 'AwesomeCo' %}
 {% endblock footer%}
 
-</div>
+
+<!------SPLINE CANVAS JS------>
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+<script type="importmap">
+  {
+    "imports": {
+      "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.483/build/runtime.js"
+    }
+  }
+</script>
+<script type="module" src="{% static 'js/spline.js' %}"></script>
 
 </body>
 

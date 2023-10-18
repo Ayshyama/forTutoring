@@ -25,23 +25,6 @@ class AboutPageView(TemplateView):
     template_name = 'testapp/about.html'
 
 
-def home_view(request):
-    print(request)
-    print(request.method == "GET")
-    print(request.method)
-    print(request.COOKIES)
-    response = render(request, 'testapp/home2.html', {"message": "Welcome to the homepage!"})
-    print('Response:', response)
-    return response
-    # response_2 = HttpResponse("Welcome to the homepage!")
-    # response_2.write("<h1> Hello World! </h1>")
-    # return response_2
-
-
-def about_view(request):
-    return render(request, 'testapp/about2.html', {"message": "About us page!"})
-
-
 def server_time_view(request):
     return render(request, 'testapp/server_time.html')
 
