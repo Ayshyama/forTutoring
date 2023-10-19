@@ -45,7 +45,10 @@
                     <li>
                         <div class="user-info">
                             {% if user.avatar %}
-                                <img src="{{ user.avatar.url }}" alt="User Avatar" class="user-avatar">
+                                <a href="{% url 'profile-details' user.username %}">
+                                    <img src="{{ user.avatar.url }}" alt="User Avatar" class="user-avatar">
+                                </a>
+
                             {% endif %}
                             Welcome,&nbsp; <span style="color: mediumvioletred">{{ user.username }}</span>
                         </div>

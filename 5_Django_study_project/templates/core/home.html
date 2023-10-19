@@ -38,8 +38,6 @@
 
                 </div>
 
-        <br><br>
-
                 <div class="content-wrap">
 {#                    <div class="hero__shape-1"></div>#}
                     <div class="hero__shape-2"></div>
@@ -52,6 +50,30 @@
                     <div class="posts">
 
                         {% block posts_repeat %}
+                            {% for post in posts %}
+                                <div class="post">
+                                    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+                                    <p>{{ post.body }}</p>
+                                    <h5>Author: {{ post.author }}</h5>
+                                </div>
+                            {% endfor %}
+                        {% endblock %}
+                        </div>
+
+                </div>
+
+                <div class="content-wrap">
+{#                    <div class="hero__shape-1"></div>#}
+                    <div class="hero__shape-2"></div>
+                    <div class="hero__shape-3"></div>
+
+                    {% block page_title_repeat_again %}
+                        <h1 class="centered-title">Recent Posts Repeat</h1>
+                    {% endblock page_title_repeat_again %}
+
+                    <div class="posts">
+
+                        {% block posts_repeat_again %}
                             {% for post in posts %}
                                 <div class="post">
                                     <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>

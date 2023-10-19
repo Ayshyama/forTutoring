@@ -1,67 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="523e2357-2682-4801-bee3-134af25d78cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/users/profile_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/profile_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c920e898-abe3-46cf-9df0-9d32a20a917e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c920e898-abe3-46cf-9df0-9d32a20a917e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/templatetags/my_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_core/templatetags/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc_temp_project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study_project/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/migrations/0002_post_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_practice/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/fetch_time.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/fetch_time.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/practice/practice_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/practice/practice_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/server_time.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/server_time.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,22 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Igor",
-    "last_opened_file_path": "C:/Users/user/Desktop/Projects/9_FOR_TUTORING/forTutoring/5_Django_study_project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Igor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Projects/9_FOR_TUTORING/forTutoring/5_Django_study_project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Django Server.5_Django_study_project">
     <configuration name="Test: posts.tests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="5_Django_study_project" />
@@ -256,7 +218,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697616376762</updated>
-      <workItem from="1697616377891" duration="17005000" />
+      <workItem from="1697616377891" duration="17895000" />
+      <workItem from="1697641826864" duration="2980000" />
+      <workItem from="1697698867731" duration="14219000" />
     </task>
     <servers />
   </component>
