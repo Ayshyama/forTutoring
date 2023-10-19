@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<head>
+    {% block title %}<title>Profile</title>{% endblock title %}
+</head>
+
+{% block hero %}
+    <main class="main">
+        <section class="hero">
+                <img src="{% static 'img/shape-bg.png' %}" alt="" class="hero__shape-bg">
+        </section>
+
+            <div class="content-wrap">
+{#                <div class="hero__shape-1"></div>#}
+                <div class="hero__shape-2"></div>
+                <div class="hero__shape-3"></div>
+
+                {% block page_title %}
+                    <h1 class="centered-title">Your Profile</h1>
+                {% endblock page_title %}
+
+
+                <h1>{{ profile.user.username }}</h1>
+                <br>
+                {% if profile.user.avatar %}
+                    <img src="{{ profile.user.avatar.url }}" alt="{{ profile.user.username }}'s Avatar" class="user-avatar">
+                {% endif %}
+                <br><br>
+                <p>{{ profile.bio }}</p>
+
+
+                            <br><br>
+
+                <h2>Posts by {{ profile.user.username }}</h2>
+                <ul>
+                    {% for post in user_posts %}
+                        <li><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></li>
+                    {% empty %}
+                        <li>No posts available.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+    </main>
+{% endblock hero%}
