@@ -37,13 +37,22 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "app_core",  # new
-    "app_users",  # new
-    "app_posts",  # new
-    "django_select2",  # new
-    "ckeditor",  # new
-    "rest_framework",  # new
-    "app_apis",  # new
+    # local apps
+    "app_core",
+    "app_users",
+    "app_posts",
+    "app_apis",
+    # third party apps
+    "django_select2",
+    "ckeditor",
+    "rest_framework",
+    "rest_framework.authtoken",
+    "dj_rest_auth",
+    "dj_rest_auth.registration",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    'allauth.socialaccount.providers.github',
 ]
 
 MIDDLEWARE = [
@@ -54,6 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "allauth.account.middleware.AccountMiddleware",  # new
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -145,7 +155,13 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
-    ]
+    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.BasicAuthentication",
+    ],
 }
 
 AUTH_USER_MODEL = "app_users.CustomUser"  # new
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  # new
