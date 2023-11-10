@@ -26,9 +26,6 @@ urlpatterns = [
     path('', include('app_users.urls')),  # new
     path('', include('app_posts.urls')),  # new
     path('api-auth/', include('rest_framework.urls')),  # new
-    path('api/dj-rest-auth/', include('dj_rest_auth.urls')),  # new
-    path('api/dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),  # new
-    # path('allauth/', include('allauth.urls')),  # new
 ]
 
 if settings.DEBUG:
