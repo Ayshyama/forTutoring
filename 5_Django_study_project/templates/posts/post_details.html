@@ -1,17 +1,22 @@
-                <div class="posts">
-                    {% block posts %}
-                        {% for post in posts %}
-                            <div class="post">
-                                <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-                                <p>{{ post.body }}</p>
-                                <h5>Author: {{ post.author }}</h5>
-                            </div>
-                        {% endfor %}
-                    {% endblock %}
-                    </div>
-                </div>
+{% extends 'core/base.html' %}
 
-<div>
-    <h2>{{post}}</h2>
-    <p>{{ post.body }}</p>
-</div>
+
+{% block hero %}
+    <div class="content-wrap">
+        <div class="hero__shape-2"></div>
+        <div class="hero__shape-3"></div>
+
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            {% for category in post.category.all %}
+                <span><em># {{ category }}</em></span>
+            {% endfor %}
+<p style="word-wrap: break-word;">{{ post.body|safe }}</p>
+
+            <h5>Author: {{ post.author }}</h5>
+            <a href="{% url 'post_edit' post.pk %}" class="btn-edit">Edit</a>
+
+        </div>
+
+    </div>
+{% endblock %}

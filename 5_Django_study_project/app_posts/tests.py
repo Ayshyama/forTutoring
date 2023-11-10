@@ -1,31 +1,26 @@
 from django.test import TestCase
+from django.contrib.auth import get_user_model
 from .models import Post
 from django.urls import reverse
 
 # Create your tests here.
-
+User = get_user_model()
 
 class PostTest(TestCase):
     @classmethod
     def setUpTestData(cls):
-        cls.post = Post.objects.create(title='My Test Post', body='This is a test post')
+        cls.user = User.objects.create_user(
+            username='testuser',
+            password='testpass123'
+        )
 
-    def test_post_content(self):
-        post = Post.objects.get(id=1)
-        expected_title = f'{post.title}'
-        expected_body = f'{post.body}'
-        self.assertEqual(expected_title, 'My Test Post')
-        self.assertEqual(expected_body, 'This is a test post')
+        cls.post = Post.objects.create(
+            title='Test title',
+            body='Test body',
+            author=cls.user
+        )
 
-    def test_url_exists_at_correct_location(self):
-        resp = self.client.get('/')
-        self.assertEqual(resp.status_code, 200)
-
-    def test_url_available_by_name(self):
-        resp = self.client.get(reverse('home'))
-        self.assertEqual(resp.status_code, 200)
-
-    def test_template_name_is_correct(self):
-        resp = self.client.get(reverse('home'))
-        self.assertEqual(resp.status_code, 200)
-        self.assertTemplateUsed(resp, 'testapp/home.html')
+    def test_post_model(self):
+        self.assertEqual(self.post.title, 'Test title')
+        self.assertEqual(self.post.body, 'Test body')
+        self.assertEqual(self.post.author, self.user)

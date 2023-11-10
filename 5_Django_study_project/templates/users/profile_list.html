@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% for profile in profile_list %}
+    <li>{{ profile.user.username }}</li>
+    <li>{{ profile.user.email }}</li>
+    <li>{{ profile.user.first_name }}</li>
+    <li>{{ profile.user.last_name }}</li>
+    <li>{{ profile.user.date_joined }}</li>
+{% endfor %}

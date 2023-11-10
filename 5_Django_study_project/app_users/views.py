@@ -1,79 +1,50 @@
-from django.contrib.auth import authenticate, login, logout, get_user_model
-from django.views.generic import ListView, DetailView
-from .forms import RegistrationForm, LoginForm
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from .models import Profile
-from app_posts.models import Post
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.forms import UserChangeForm
+from django.urls import reverse_lazy
+from django.views.generic import CreateView, UpdateView
+from django.contrib.auth.views import LoginView, LogoutView
+from .forms import RegistrationForm, LoginForm, ProfileEditForm
+from django.shortcuts import redirect
+from .models import CustomUser
 
 
-# Create your views here.
 
-User = get_user_model()
-
-
-def register(request):
-    if request.method == 'POST':                        # if form is submitted
-        form = RegistrationForm(request.POST)           # create form
-        if form.is_valid():                             # if form data is valid
-            user = form.save(commit=False)              # create user, but don't save to database yet
-            password = form.cleaned_data['password']    # get password from form
-            user.set_password(password)                 # set password
-            user.avatar = form.cleaned_data['avatar']   # get avatar from form
-            user.save()                                 # save user
-            messages.success(request, 'Account created successfully')  # send success message
-            # login(request, user)                      # login user
-            return redirect('login')                    # redirect to home
-    else:                                               # if form is not submitted
-        form = RegistrationForm()                       # create form
-    return render(request, 'users/register.html', {'form': form})      # render template
+class UserRegisterView(CreateView):
+    model = CustomUser
+    form_class = RegistrationForm
+    success_url = reverse_lazy('login')
+    template_name = 'users/register.html'
 
 
-def user_login(request):
-    if request.method == 'POST':                        # if form is submitted
-        form = LoginForm(request.POST)                  # create form
-        if form.is_valid():
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password']
-            user = authenticate(request, username=username, password=password)   # authenticate user
-            if user is not None:                        # if user exists
-                login(request, user)                    # login user
-                return redirect('home')                 # redirect to home
-            else:
-                form.add_error(None, f'Failed to authenticate user: {username}')
-    else:                                               # if form is not submitted
-        form = LoginForm()                              # create form
-    return render(request, 'users/login.html', {'form': form})  # render template
+class UserLoginView(LoginView):
+    form_class = LoginForm
+    redirect_authenticated_user = True
+    template_name = 'users/login.html'
+
+    def get_success_url(self):
+        return reverse_lazy('home')
 
 
-def user_logout(request):
-    logout(request)                                     # logout user
-    return redirect('home')                             # redirect to home
-
-
-class ProfileListView(ListView):
-    model = Profile
-    template_name = 'users/profile_list.html'
-    context_object_name = 'profiles'
-
-
-class ProfileDetailView(LoginRequiredMixin, DetailView):
-    model = Profile
+class UserChangeView(UpdateView):
+    model = CustomUser
+    form_class = UserChangeForm
     template_name = 'users/profile_details.html'
-    context_object_name = 'profile'
+    success_url = reverse_lazy('edit_profile')
+    # fields = ['username', 'email', 'avatar', 'bio']
 
     def get_object(self, queryset=None):
-        username = self.kwargs['username']
-        user = User.objects.get(username=username)
-        return Profile.objects.get(user=user)
+        return self.request.user
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        user = self.object.user
-        posts = Post.objects.filter(author=user)
-        context['user_posts'] = posts
-        return context
+
+class UserLogoutView(LogoutView):
+    next_page = reverse_lazy('home')
+
+
+class AuthMixin:
+    def dispatch(self, request, *args, **kwargs):
+        print(self.kwargs)
+        if not request.user.username == self.kwargs['username']:
+            return redirect('login')
+        return super().dispatch(request, *args, **kwargs)
 
 
 

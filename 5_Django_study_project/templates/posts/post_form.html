@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block title %}<title>Post Form</title>{% endblock title %}
+
+
+{% block hero %}
+    <div class="content-wrap">
+        <div class="hero__shape-2"></div>
+        <div class="hero__shape-3"></div>
+        <h2>{% if object %}Edit{% else %}Create{% endif %} Post</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+        </form>
+    </div>
+{% endblock %}
+
+
+

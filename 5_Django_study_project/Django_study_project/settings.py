@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app_core",  # new
-    "app_practice",  # new
     "app_users",  # new
     "app_posts",  # new
+    "django_select2",  # new
+    "ckeditor",  # new
+    "rest_framework",  # new
+    "app_apis",  # new
 ]
 
 MIDDLEWARE = [
@@ -57,7 +60,7 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-AUTH_USER_MODEL = "users.CustomUser"  # new
+
 
 ROOT_URLCONF = "Django_study_project.urls"
 
@@ -139,4 +142,10 @@ MEDIA_ROOT = BASE_DIR / "media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL = 'app_users.CustomUser'
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ]
+}
+
+AUTH_USER_MODEL = "app_users.CustomUser"  # new
