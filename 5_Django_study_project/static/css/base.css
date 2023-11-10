@@ -13,7 +13,6 @@ body {
     margin: 0;
     /*position: relative;*/
     background-color: rgb(234, 209, 198);
-
 }
 
 html,
@@ -43,24 +42,29 @@ canvas {
 .page-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
+
 }
 
 .content-wrap {
-    margin: 40px auto;
+    margin: 19px auto;
     padding: 40px;
     position: relative;
     width: calc(100% - 200px);
     max-width: 1280px;
     z-index: 1;
     overflow: hidden;
-    /*border: rgba(255, 255, 255, 0.35) 1px solid;*/
 }
 
 .centered-title {
+    margin-top: 20px;
     text-align: center;
     left: 50%;
+    line-height: 1;
 }
 
+main {
+    z-index: 1;
+}
 
 
 

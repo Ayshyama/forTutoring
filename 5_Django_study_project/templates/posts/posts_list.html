@@ -1,7 +1,63 @@
-{% for post in posts %}
-    <div class="post">
-        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-        <p>{{ post.body }}</p>
-        <h5>Author: {{ post.author }}</h5>
-    </div>
-{% endfor %}
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block hero %}
+    <main class="main">
+        <section class="hero">
+            <img src="{% static 'img/shape-bg.png' %}" alt="" class="hero__shape-bg">
+        </section>
+
+        <div class="category-buttons">
+            <a class="{% if category_slug == 'all' %}chosen{% endif %}" data-category-slug="all"
+               href="{% url 'posts' 'all' %}">All</a>
+            {% for category in categories %}
+                <a class="{% if category_slug == category.slug %}chosen{% endif %}"
+                   data-category-slug="{{ category.slug }}"
+                   href="{% url 'posts' category.slug %}">{{ category.name }}</a>
+            {% endfor %}
+        </div>
+
+        <a href="{% url 'post_new' %}" class="btn-create">Create New Post</a>
+
+        {% block posts %}
+            <div class="posts">
+                {% for post in posts %}
+
+                    <div class="content-wrap">
+                        <div class="hero__shape-2"></div>
+                        <div class="hero__shape-3"></div>
+
+                        <div class="post">
+                            <h2><a href="{% url 'post' post.pk %}">
+                                {{ post.title }}
+                            </a></h2>
+
+                            {% for category in post.category.all %}
+                                <span><em># {{ category }}</em></span>
+                            {% endfor %}
+
+                            <div class="post_img" style="text-align: center;">
+                                <img style='width: 140px; height: 140px; display: inline-block;'
+                                     src="{% static 'img/glucose.png' %}" alt="">
+                            </div>
+
+                            {% if post.body|length > 750 %}
+                                <p>{{ post.body|safe|slice:":750" }}...</p><br>
+                                <a href="{% url 'post' post.pk %}">Read more</a>
+                            {% else %}
+                                <p>{{ post.body|safe }}</p>
+                            {% endif %}
+
+                            <h5>Author: {{ post.author }}</h5>
+
+                        </div>
+
+                    </div>
+
+                {% endfor %}
+            </div>
+        {% endblock %}
+
+    </main>
+{% endblock hero %}

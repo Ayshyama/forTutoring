@@ -9,87 +9,51 @@
 
 
 {% block hero %}
-    <main class="main">
-        <section class="hero">
-                <img src="{% static 'img/shape-bg.png' %}" alt="" class="hero__shape-bg">
-        </section>
 
-            <div class="content-wrap">
-{#                <div class="hero__shape-1"></div>#}
-                <div class="hero__shape-2"></div>
-                <div class="hero__shape-3"></div>
+    <section class="hero">
+            <img src="{% static 'img/shape-bg.png' %}" alt="" class="hero__shape-bg">
+    </section>
 
-                {% block page_title %}
-                    <h1 class="centered-title">Recent Posts</h1>
-                {% endblock page_title %}
-
-                <div class="posts">
-
-                    {% block posts %}
-                        {% for post in posts %}
-                            <div class="post">
-                                <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-                                <p>{{ post.body }}</p>
-                                <h5>Author: {{ post.author }}</h5>
-                            </div>
-                        {% endfor %}
-                    {% endblock %}
-                    </div>
-
-                </div>
-
-                <div class="content-wrap">
-{#                    <div class="hero__shape-1"></div>#}
-                    <div class="hero__shape-2"></div>
-                    <div class="hero__shape-3"></div>
-
-                    {% block page_title_repeat %}
-                        <h1 class="centered-title">Recent Posts Repeat</h1>
-                    {% endblock page_title_repeat %}
-
-                    <div class="posts">
-
-                        {% block posts_repeat %}
-                            {% for post in posts %}
-                                <div class="post">
-                                    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-                                    <p>{{ post.body }}</p>
-                                    <h5>Author: {{ post.author }}</h5>
-                                </div>
-                            {% endfor %}
-                        {% endblock %}
-                        </div>
-
-                </div>
-
-                <div class="content-wrap">
-{#                    <div class="hero__shape-1"></div>#}
-                    <div class="hero__shape-2"></div>
-                    <div class="hero__shape-3"></div>
-
-                    {% block page_title_repeat_again %}
-                        <h1 class="centered-title">Recent Posts Repeat</h1>
-                    {% endblock page_title_repeat_again %}
-
-                    <div class="posts">
-
-                        {% block posts_repeat_again %}
-                            {% for post in posts %}
-                                <div class="post">
-                                    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-                                    <p>{{ post.body }}</p>
-                                    <h5>Author: {{ post.author }}</h5>
-                                </div>
-                            {% endfor %}
-                        {% endblock %}
-                        </div>
-
-                </div>
+    {% block page_title %}
+        <h1 class="centered-title">Explore the Fascinating World of Polymers</h1>
+    {% endblock page_title %}
 
 
+    <div class="content-wrap">
+        <div class="post">
+            <div class="hero__shape-2"></div>
+            <div class="hero__shape-3"></div>
+            <p>
+                Welcome to a scientific journey through the realm of polymers,
+                where innovation meets molecular complexity.
+                Our site is your portal to a universe where chains of atoms give
+                rise to materials with remarkable properties,
+                impacting industries from healthcare to aerospace.
 
+                Dive into the intricate world of synthetic and natural polymers.
+                Learn how these macromolecules, formed through meticulous chemical
+                processes or found in nature, shape our modern world.
+                Discover their roles in materials science, engineering, and everyday life.
+                <br><br>
+                Uncover the secrets of polymerization,
+                understand the diverse categories of polymers,
+                and witness their transformative applications.
+                Join us on a voyage that combines scientific curiosity
+                with the practical marvels of polymer chemistry.
 
-    </main>
+                Whether you're a student, researcher,
+                or simply intrigued by the science that surrounds us,
+                our site provides a wealth of knowledge and insights.
+                Explore the articles, delve into the structures,
+                and embark on a scientific adventure as we unravel the wonders of polymers.
+                Welcome to the intersection of science and innovation –
+                welcome to our polymer world.
+                <br><br>
+            </p>
+            <h3><a href="{% url 'posts' 'all' %}">Explore</a></h3>
+        </div>
+    </div>
+
 {% endblock hero%}
 
 

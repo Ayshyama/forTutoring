@@ -1,15 +1,16 @@
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Register</button>
-
-    {% if messages %}
-        {% for message in messages %}
-            <p>{{ message }}</p>
-            <a href="{% url 'login' %}">Click here to Login!</a>
-        {% endfor %}
-    {% endif %}
+{% extends 'core/base.html' %}
 
 
-</form>
+{% block hero %}
+    <div class="content-wrap">
+        <div class="hero__shape-2"></div>
+        <div class="hero__shape-3"></div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
 
+    </div>
+
+{% endblock %}

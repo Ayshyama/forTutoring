@@ -4,8 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.25);
-     box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
 }
 
 .navbar {
@@ -14,8 +14,7 @@
     margin: 0 auto;
     z-index: 1;
     /*border: rgba(255, 165, 0, 0.65) 1px solid;*/
-    border: rgba(255, 255, 255, 0.50) 1px solid;
-
+    border: rgb(235, 255, 244) 1px solid;
     padding-right: 40px;
     padding-left: 40px;
 }
@@ -62,8 +61,8 @@
 
 .user-avatar {
     background-color: orange;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     margin-right: 10px;
 }

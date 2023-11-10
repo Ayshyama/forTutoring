@@ -7,23 +7,23 @@
     border-radius: 50%;
     filter: blur(160px);
     z-index: -2;
+    pointer-events: none;
 }
 
 .hero__shape-1 {
     position: absolute;
-    /*background-color: rgba(153, 53, 153, 0.70);*/
-    /*background-image: radial-gradient(circle, rgba(255, 60, 0, 0.7), rgba(0, 120, 255, 0.7));*/
-    /*background-image: radial-gradient(circle, rgba(0, 255, 208, 0.56), rgba(17, 255, 0, 0.56));*/
-    background-color: rgba(255, 255, 255, 0.95);
-    margin-top: -400px;
-    margin-left: -250px;
-    width: 600px;
-    height: 650px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: -280px;
+    margin-left: -120px;
+    width: 400px;
+    height: 400px;
+    filter: blur(60px);
+
 }
 
 
 .hero__shape-2 {
-    background-color: rgba(0, 92, 206, 0.70);
+    background-color: rgba(0, 92, 206, 0.25);
     margin-top: -10%;
     margin-left: 80%;
     width: 380px;
@@ -32,8 +32,7 @@
 
 .hero__shape-3 {
     /*background-color: rgba(0, 232, 160, 0.65);*/
-    background-color: rgba(153, 53, 153, 0.70);
-
+    background-color: rgba(211, 1, 1, 0.25);
     margin-top: 30%;
     margin-left: 0;
     width: 440px;
@@ -50,13 +49,39 @@
     /*mix-blend-mode: soft-light;*/
     opacity: .05;
     z-index: 0;
+    pointer-events: none;
 }
+
 
 /*=============== Posts ===============*/
 .posts h5 {
     text-align: right;
 }
 .post {
-    margin-top: 40px;
     text-align: justify;
+}
+
+.category-buttons {
+    margin-top: 19px;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+.category-buttons a {
+        padding: 10px;
+}
+
+.chosen {
+    border: rgb(235, 255, 244) 1px solid;
+    box-shadow: 4px 4px 20px rgba(235, 255, 244, 0.3);
+}
+
+p {
+    overflow-wrap: break-word;
+    /* or for older browsers */
+    word-wrap: break-word;
 }
