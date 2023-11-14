@@ -9,7 +9,7 @@ git remote -v
 ```
 3. if remote is not Ayshyama/forTutoring, then add remote
 ```
-git remote add origin https://github.com/Ayshyama/forTutoring.git
+git remote add upstream https://github.com/Ayshyama/forTutoring.git
 ```
 
 # If you want to have the same repository inside your Git account, you can fork it.
