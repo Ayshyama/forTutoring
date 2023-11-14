@@ -7,7 +7,7 @@ git clone https://github.com/Ayshyama/forTutoring
 ```
 git remote -v
 ```
-3. if remote is not Ayshyama/forTutoring, then add remote
+3. if remote upstream is not Ayshyama/forTutoring, then add remote
 ```
 git remote add upstream https://github.com/Ayshyama/forTutoring.git
 ```
