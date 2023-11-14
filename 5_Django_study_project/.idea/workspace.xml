@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="523e2357-2682-4801-bee3-134af25d78cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TESTPUSHFILE" afterDir="false" />
-    </list>
+    <list default="true" id="523e2357-2682-4801-bee3-134af25d78cf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Ovidiu-user-auth",
     "last_opened_file_path": "C:/Users/user/Desktop/Projects/17-FP_testdb",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -259,7 +257,7 @@
       <workItem from="1699624119651" duration="4636000" />
       <workItem from="1699871224471" duration="48000" />
       <workItem from="1699952997455" duration="8197000" />
-      <workItem from="1699967116551" duration="3517000" />
+      <workItem from="1699967116551" duration="3920000" />
     </task>
     <servers />
   </component>
